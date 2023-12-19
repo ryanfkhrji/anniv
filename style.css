@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap");
+
+:root {
+  --color-1: #d14d72;
+  --color-2: #ffabab;
+  --color-3: #fcc8d1;
+  --color-4: #fef2f4;
+  --color-5: #ffffff;
+  --color-6: #092635;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Comic Neue", cursive;
+}
+
+body {
+  background-color: var(--color-4);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  /* border: 1px solid #000; */
+  position: relative;
+}
+
+/* Section Navbar */
+nav .nav-box {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-1);
+  position: absolute;
+  bottom: 8px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+nav .nav-box .nav-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .nav-box .nav-item-box .nav-item,
+i {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+nav a {
+  color: var(--color-1);
+}
+
+nav .nav-box .nav-item-box .nav-item:hover {
+  background-color: var(--color-2);
+}
+
+/* Section Content */
+.box-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box-cover .box-cover-item,
+h3 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--color-1);
+}
+
+.box-cover .box-cover-item .btn-open {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--color-1);
+  color: var(--color-4);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.box-cover .box-cover-item .btn-open:hover {
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.box-love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.box-love .box-love-item {
+  text-align: center;
+}
+
+.box-love .box-love-item .btn-open {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--color-1);
+  color: var(--color-4);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.box-love .box-love-item .btn-open:hover {
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+#ucapan {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 20px 0;
+}
+
+/* Animasi */
+.denyut {
+  animation: pound 0.5s infinite;
+  animation-duration: 3s;
+}
+@keyframes pound {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
