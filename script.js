@@ -1,30 +1,20 @@
-// cover
-const text = ["happy anniversary"];
+// memories
+const boxImg = document.querySelector(".box-img");
+const head = document.querySelector(".header-img");
+const thumb = document.querySelectorAll(".thumbnail-img");
 
-function typeWriter(text, i, callback) {
-  if (i < text.length) {
-    document.getElementById("title").innerHTML += text.charAt(i);
-    i++;
+boxImg.addEventListener("click", function (e) {
+  if (e.target.className == "thumbnail-img") {
+    head.src = e.target.src;
+    head.classList.add("animation");
+
     setTimeout(function () {
-      typeWriter(text, i, callback);
-    }, 50);
-  } else {
-    setTimeout(callback, 2000);
-  }
-}
+      head.classList.remove("animation");
+    }, 500);
 
-function displayLyrics() {
-  let lineIndex = 0;
-  function displayLine() {
-    if (lineIndex < text.length) {
-      document.getElementById("title").innerHTML = "";
-      typeWriter(text[lineIndex], 0, function () {
-        lineIndex++;
-        displayLine();
-      });
-    }
+    thumb.forEach(function (th) {
+      th.className = "thumbnail-img";
+    });
+    e.target.classList.add("active");
   }
-  displayLine();
-}
-
-displayLyrics();
+});

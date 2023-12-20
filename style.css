@@ -85,6 +85,68 @@ h3 {
   background: var(--color-1);
 }
 
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-img {
+  width: 22rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  gap: 10px;
+}
+
+.thumbnail .thumbnail-img {
+  width: 5rem;
+  margin-top: 20px;
+}
+
+.thumbnail-img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.animation {
+  opacity: 0;
+  animation: fade 0.5s forwards;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.form-control {
+  padding: 15px;
+  background: transparent;
+  border: 2px solid var(--color-1);
+}
+
+.form-control::placeholder {
+  color: var(--color-1);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.form-control:focus {
+  background: transparent;
+}
+
 /* Animasi */
 .denyut {
   animation: pound 0.5s infinite;
