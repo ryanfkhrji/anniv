@@ -22,126 +22,41 @@ body {
   background-color: var(--color-4);
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  height: 100vh;
-  /* border: 1px solid #000; */
-  position: relative;
+/* navbar */
+.nav-item .nav-link {
+  color: #fef2f4;
+  transition: all 0.5s ease-in;
 }
 
-/* Section Navbar */
-nav .nav-box {
-  position: fixed;
-  width: 100%;
-  padding: 10px;
-  background: rgba(209, 77, 114, 0.3);
-  position: absolute;
-  bottom: 20px;
-  border-radius: 10px;
-  z-index: 9999;
+.nav-item .nav-link:hover {
+  color: var(--color-3);
 }
 
-nav .nav-box .nav-item-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-nav .nav-box .nav-item-box .nav-item,
-i {
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-3);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  cursor: pointer;
+.btn-open {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 20px;
   transition: all 0.5s ease;
 }
 
-nav a {
-  color: var(--color-1);
-}
-
-nav .nav-box .nav-item-box .nav-item:hover {
+.btn-open:hover {
   background-color: var(--color-2);
 }
 
-/* Section Content */
 .box-cover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.box-cover .box-cover-item,
+.box-cover .box-item,
 h3 {
   text-align: center;
-  padding: 10px 0;
-  font-size: 28px;
-  font-weight: bold;
   color: var(--color-1);
-}
-
-.box-cover .box-cover-item .btn-open {
-  border: none;
-  padding: 10px 20px;
-  background-color: var(--color-1);
-  color: var(--color-4);
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.box-cover .box-cover-item .btn-open:hover {
-  background-color: var(--color-2);
-  color: var(--color-1);
-}
-
-.box-love {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 90vh;
-}
-
-.box-love .box-love-item {
-  text-align: center;
-}
-
-.box-love .box-love-item .btn-open {
-  border: none;
-  padding: 10px 20px;
-  background-color: var(--color-1);
-  color: var(--color-4);
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.box-love .box-love-item .btn-open:hover {
-  background-color: var(--color-2);
-  color: var(--color-1);
-}
-
-#ucapan {
-  background-color: var(--color-1);
-  color: var(--color-4);
-  padding: 15px 10px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  margin: 20px 0;
+  font-size: 36px;
 }
 
 /* Animasi */
