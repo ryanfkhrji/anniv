@@ -25,7 +25,7 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100vh;
   /* border: 1px solid #000; */
   position: relative;
 }
@@ -75,7 +75,7 @@ nav .nav-box .nav-item-box .nav-item:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .box-cover .box-cover-item,
@@ -108,7 +108,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  height: 90vh;
 }
 
 .box-love .box-love-item {
