@@ -46,7 +46,7 @@ body {
 }
 
 .box-cover {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +57,32 @@ h3 {
   text-align: center;
   color: var(--color-1);
   font-size: 36px;
+}
+
+.box-love .box-item-love {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-love {
+  background-color: var(--color-1);
+  color: var(--color-4);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 20px;
+  transition: all 0.5s ease;
+}
+
+.btn-love:hover {
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.modal-content {
+  background: var(--color-1);
 }
 
 /* Animasi */
